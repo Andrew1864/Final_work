@@ -2,8 +2,24 @@
     margin-top: 120px;
     margin-bottom: 100px;
 }
-.chandelier,
-.chair,
+.section-two
+img {
+    width: 100%;
+    height: auto;
+}
+.chandelier {
+    width: 270px;
+    height: 289px;
+    background: #FFF;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.03);
+}
+.chair{
+    width: 270px;
+    height: 289px;
+    margin: 14px 14px 1px;
+    background: #FFF;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.03);
+}
 .table {
     width: 270px;
     height: 289px;
@@ -43,20 +59,23 @@ h3 {
     width: 570px;
     height: 614px;
 }
+.left-content
 .chandelier
-img {
-    margin: 0px 32px 0px;
-    width: 202px;
-    height: 226px;
+.thing-img img {
+    margin: 0px 54px 17px;
+    width: 170px;
+    height: 211px;
 }
+.center-content
 .chair
-img {
+.thing-img img {
     margin: 16px 60px 36px;
     width: 175px;
     height: 169px;
 }
+.center-content
 .table
-img {
+.thing-img img {
     margin: 0px 32px 0px;
     width: 202px;
     height: 226px;
@@ -73,4 +92,54 @@ img {
 }
 .first-text {
     margin: 123px 15px 157px;
+}
+@media screen and (max-width: 1023px) {
+    .right-content,
+    .chair-office {
+        margin: 0px;
+        width: 348px;
+        height: 414px;
+        box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.03);
+    }
+    .first-text
+    h3 {
+        font-size: 20px;
+    }
+    .line {
+        width: 70px;
+        height: 2px;
+        margin-top: -20px;
+        background: #303032;
+    }
+    .chandelier {
+        margin: 7px 8px 4px;
+         width: 224px;
+         height: 289px;
+    }
+    }
+    @media screen and (max-width: 1023px) {
+        .chair {
+            width: 235px;
+            height: 292px;
+            margin: 0px 14px 1px;
+        }
+        .table {
+            width: 235px;
+            height: 292px;
+            margin: 12px 14px 1px;
+        }
+        .left-content .chandelier .thing-img img {
+            margin: 0px 54px 17px;
+            width: 170px;
+            height: 211px;
+        }
+        .left-content .chandelier .thing-img img {
+            margin: 0px 25px 17px;
+    }
+    .center-content .chair .thing-img img {
+        margin: 16px 46px 36px;
+    }
+    .center-content .table .thing-img img {
+        margin: -29px 16px 25px;
+    }
 }
