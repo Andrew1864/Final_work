@@ -1,0 +1,76 @@
+.section-two {
+    margin-top: 120px;
+    margin-bottom: 100px;
+}
+.chandelier,
+.chair,
+.table {
+    width: 270px;
+    height: 289px;
+    background: #FFF;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.03);
+}
+.line {
+    width: 90px;
+    height: 4px;
+    margin-top: -25px;
+    background: #303032;
+}
+.first-text 
+h3 {
+    font-size: 28px;
+    font-family: Playfair Display;
+}
+.chair-office 
+.text {
+    margin-top: 17px;
+}
+.chair-office {
+    height: 593px;
+    background: #FFF;
+    box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.03);
+}
+.chandelier, 
+.chair,
+.table,
+.chair-office {
+    margin: 15px;
+}
+.table {
+    background: #FAECE9;
+}
+.right-content {
+    width: 570px;
+    height: 614px;
+}
+.chandelier
+img {
+    margin: 0px 32px 0px;
+    width: 202px;
+    height: 226px;
+}
+.chair
+img {
+    margin: 16px 60px 36px;
+    width: 175px;
+    height: 169px;
+}
+.table
+img {
+    margin: 0px 32px 0px;
+    width: 202px;
+    height: 226px;
+}
+.section-two
+.text {
+    text-align: center;
+    font-family: Open Sans;
+}
+.d-flex {
+    display: flex;
+    align-items: flex-start;
+    /* gap: 30px; */
+}
+.first-text {
+    margin: 123px 15px 157px;
+}
