@@ -10,6 +10,7 @@ img {
 .chandelier {
     width: 270px;
     height: 289px;
+    order: 3;
     background: #FFF;
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.03);
 }
@@ -17,12 +18,14 @@ img {
     width: 270px;
     height: 289px;
     margin: 14px 14px 1px;
+    order: 1;
     background: #FFF;
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.03);
 }
 .table {
     width: 270px;
     height: 289px;
+    order: 2;
     background: #FFF;
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.03);
 }
@@ -43,6 +46,7 @@ h3 {
 }
 .chair-office {
     height: 593px;
+    order: 4;
     background: #FFF;
     box-shadow: 0px 0px 25px 0px rgba(0, 0, 0, 0.03);
 }
@@ -88,8 +92,9 @@ h3 {
 .d-flex {
     display: flex;
     align-items: flex-start;
-    /* gap: 30px; */
+
 }
+
 .first-text {
     margin: 123px 15px 157px;
 }
@@ -136,10 +141,86 @@ h3 {
         .left-content .chandelier .thing-img img {
             margin: 0px 25px 17px;
     }
-    .center-content .chair .thing-img img {
+        .center-content .chair .thing-img img {
         margin: 16px 46px 36px;
     }
-    .center-content .table .thing-img img {
+        .center-content .table .thing-img img {
         margin: -29px 16px 25px;
     }
 }
+@media screen and (max-width: 767px) {
+    .d-flex {
+       display: flex;
+       flex-direction: column;
+       align-items: center;
+    }
+    .center-content {
+     flex-direction: column;
+    }
+    .first-text {
+    position: relative;
+    top: -500px;
+    left: 12px;
+}
+    .center-content {
+        order: 2;
+        width: 288px;
+        height: 289px;  
+        margin: 0px 14px 1px;
+    }
+    .left-content {
+        order: 3;
+    }
+    .right-content {
+        order: 4;
+    }
+    .chair {
+        width: 288px;
+        height: 289px;
+        margin-bottom: 25px;
+    }
+    .table {
+        width: 288px;
+        height: 289px;
+        margin-bottom: 25px;
+    }
+    .chandelier {
+        width: 288px;
+        height: 289px;
+        margin-top: 187px;
+        margin-left: 35px;
+        margin-bottom: 25px;
+    }
+}
+    @media screen and (max-width: 767px) {
+        .center-content
+        .chair
+        .thing-img  img {
+            margin-left: 71px;
+            width: 175px;
+            height: 169px;
+        }
+        .center-content
+        .table
+        .thing-img img {
+            margin-top: 20px;
+            margin-left: 58px;
+            width: 175px;
+            height: 169px;
+        }
+        .left-content
+        .chandelier
+        .thing-img img {
+            margin-top: 10px;
+            margin-left: 53px;
+            width: 175px;
+            height: 169px;
+        }
+        .right-content
+        .chair-office {
+            margin-left: 43px;
+            width: 288px;
+            height: 289px;
+            background-color: #F9FDFF;
+        }
+    }
